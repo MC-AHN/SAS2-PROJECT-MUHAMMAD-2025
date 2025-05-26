@@ -29,12 +29,6 @@ async function render() {
       <button id="delete-${
         f.id
       }" class="btn btn-danger bg-danger m-1 p-2">Delete</button>
-      <button id="edit-${
-        f.id
-      }" type="button" class="btn btn-warning bg-warning m-1 p-2 " data-bs-toggle="modal" data-bs-target="#detailModal">Edit</button>
-      <button id="delete-${
-        f.id
-      }" class="btn btn-danger bg-danger m-1 p-2">Delete</button>
       `;
       result.appendChild(para);
 
