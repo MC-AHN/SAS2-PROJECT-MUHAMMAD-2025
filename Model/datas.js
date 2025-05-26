@@ -41,7 +41,7 @@ class Datas {
   async deleteData(id) {
     try {
       const isConfrim = confirm(
-        `Apakah anda yakin ingin menghapus data dengan id ${id}`
+        `Apakah anda yakin ingin menghapus data dengan id ${id}?`
       );
 
       if (isConfrim) {
@@ -65,15 +65,6 @@ class Datas {
 
   async editData(id) {
     try {
-        const title = document.getElementById("titleB").value;
-        const description = document.getElementById("descriptionB").value;
-        const status = document.getElementById("statusB").value;
-        const date = document.getElementById("dateB").value;
-      console.log(id, title, description, status, date);
-      if (!title || !description || !status || !date) {
-        throw new Error("Name And Job Is Required!");
-      }
-
       try {
         const response = await fetch(
           `https://68258f1d0f0188d7e72d6675.mockapi.io/api/todos/${id}`,

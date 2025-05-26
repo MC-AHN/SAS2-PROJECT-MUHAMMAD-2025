@@ -25,10 +25,10 @@ async function render() {
       <td>${new Date(f.dueDate).toDateString()}</td>
       <button id="edit-${
         f.id
-      }" type="button" class="btn btn-warning bg-warning m-1 p-2 " data-bs-toggle="modal" data-bs-target="#detailModal">Edit</button>
+      }" type="button" class="btn btn-warning bg-warning text-white m-1 p-2 " data-bs-toggle="modal" data-bs-target="#detailModal">Edit</button>
       <button id="delete-${
         f.id
-      }" class="btn btn-danger bg-danger m-1 p-2">Delete</button>
+      }" class="btn btn-danger bg-danger text-white m-1 p-2">Delete</button>
       `;
       result.appendChild(para);
 
@@ -77,7 +77,6 @@ async function editData(id) {
 
 document.getElementById("update").addEventListener("click", async (e) => {
   e.preventDefault();
-
 
   console.log(id);
   try {
