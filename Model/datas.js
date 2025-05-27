@@ -74,10 +74,10 @@ class Datas {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              title: title,
-              description: description,
-              is_completed: status === "true" ? true : false,
-              dueDate: date,
+              title: document.getElementById("titleB").value,
+              description: document.getElementById("descriptionB").value,
+              is_completed: document.getElementById("statusB") === "true" ? true : false,
+              dueDate: document.getElementById("dateB"),
             }),
           }
         );
