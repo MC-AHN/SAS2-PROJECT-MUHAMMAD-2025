@@ -1,3 +1,8 @@
+const title = document.getElementById("title").value;
+const description = document.getElementById("description").value;
+const is_completed =
+  document.getElementById("status").value === "true" ? true : false;
+const dueDate = document.getElementById("date").value;
 class Datas {
   constructor() {}
 
@@ -76,8 +81,8 @@ class Datas {
             body: JSON.stringify({
               title: title,
               description: description,
-              is_completed: status === "true" ? true : false,
-              dueDate: date,
+              is_completed: is_completed === "true" ? true : false,
+              dueDate: dueDate,
             }),
           }
         );
