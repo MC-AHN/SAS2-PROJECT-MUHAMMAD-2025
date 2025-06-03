@@ -1,8 +1,3 @@
-const title = document.getElementById("title").value;
-const description = document.getElementById("description").value;
-const is_completed =
-  document.getElementById("status").value === "true" ? true : false;
-const dueDate = document.getElementById("date").value;
 class Datas {
   constructor() {}
 
