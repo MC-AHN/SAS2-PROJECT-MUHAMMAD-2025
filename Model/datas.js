@@ -32,7 +32,8 @@ class Datas {
           }),
         }
       );
-      console.log(response);
+      const hasil = await response.json()
+      console.log(hasil);
     } catch (error) {
       console.error("Error while posting data: ", error);
     }
@@ -76,8 +77,8 @@ class Datas {
             body: JSON.stringify({
               title: document.getElementById("titleB").value,
               description: document.getElementById("descriptionB").value,
-              is_completed: document.getElementById("statusB") === "true" ? true : false,
-              dueDate: document.getElementById("dateB"),
+              is_completed: document.getElementById("statusB").value === "true" ? true : false,
+              dueDate: document.getElementById("dateB").value,
             }),
           }
         );

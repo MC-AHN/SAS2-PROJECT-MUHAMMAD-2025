@@ -50,8 +50,8 @@ async function render() {
   }
 }
 
-function deleteData(id) {
-  Datass.deleteData(id);
+async function deleteData(id) {
+  await Datass.deleteData(id);
   render();
 }
 
